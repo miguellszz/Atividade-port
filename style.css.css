@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+h2.titulo {
+    color: aliceblue;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blueviolet;
+}
+
+body {
+    background-color: black;
+    height: 200;
+}
+
+.Interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .Interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*TOPO*/
+
+section.topo {
+    padding: 40px 4%;
+}
+
+section.topo .flex {
+    align-items: center;
+    gap: 90px;
+}
+
+.topo h1 {
+    color: aliceblue;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo .txt-site h1 span {
+    color: blueviolet;
+}
+
+.topo .txt-site p {
+    color: aliceblue;
+    margin: 40px 0px;
+}
+
+.topo .txt-site p span {
+    color: rgb(255, 0, 255);
+}
+
+.Contatos button {
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: blueviolet;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*SOBRE*/
+section.sobre {
+    padding: 80px 4%;
+}
+
+.sobre .txt-sobre {
+    color: aliceblue;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: rgb(135, 63, 202);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: blueviolet;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s;
+    margin: 0 3px;
+}
+
+button:hover,
+form .enviar input:hover {
+    box-shadow: 0px 0px 8px rgb(85, 37, 85);
+    transform: scale(1.05);
+}
+
+section.Formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background: rgb(58, 58, 58);
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .enviar input {
+    width: 120px;
+    background-color: blueviolet;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Projetos */
+
+.Projetos{
+    color: aliceblue;
+    margin-top: 20px;
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    border: none;
+    border-radius: 30px;
+}
+
+.Projetos{
+
+    justify-content: space-around;
+}
+/* Portfolio */
+
+section.portfolio{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: blueviolet;
+}
+/* RODAPE */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer p {
+    color: blueviolet;
+    font-size: 15px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* Media Queries*/
+
+@media (max-width: 1024px) {
+    .Interface {
+        padding: 0 10px;
+    }
+
+    header > .Interface {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
+    }
+
+    .topo h1 {
+        font-size: 36px;
+    }
+
+    .topo .txt-site p {
+        font-size: 16px;
+    }
+
+    section.sobre .txt-sobre h2 {
+        font-size: 30px;
+    }
+
+    section.sobre .txt-sobre p {
+        font-size: 16px;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    footer {
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topo h1 {
+        font-size: 28px;
+    }
+
+    .topo .txt-site p {
+        font-size: 14px;
+    }
+
+    .social button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .Contatos button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    form .enviar input {
+        width: 100px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2.titulo {
+        font-size: 24px;
+    }
+
+    h2.titulo span {
+        font-size: 22px;
+    }
+
+    .topo h1 {
+        font-size: 24px;
+    }
+
+    .topo .txt-site p {
+        font-size: 12px;
+    }
+
+    header a {
+        font-size: 14px;
+    }
+
+    .Contatos button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .social button {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .Interface {
+        padding: 0 10px;
+    }
+
+    .topo .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    section.sobre .txt-sobre h2 {
+        font-size: 28px;
+    }
+
+    section.sobre .txt-sobre p {
+        font-size: 14px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    form .enviar input {
+        width: 100px;
+    }
+}
+
+.fotinha-do-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px; 
+    display: inline-block;
+    vertical-align: left;
+    align-items: left;
+}
